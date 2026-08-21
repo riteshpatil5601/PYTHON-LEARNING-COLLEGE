@@ -1,0 +1,5 @@
+str1 = ("My name is Siddhesh")
+str2 = ('I am from Gargoti')
+str3 = ('''My age is Twenty''')
+str4 = ("""My favourite sub is Python Prgramming """)
+print(str1,"\n",str2,"\n",str3,"\n",str4)
