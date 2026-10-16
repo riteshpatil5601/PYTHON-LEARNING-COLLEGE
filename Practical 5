@@ -1,0 +1,27 @@
+# Normal function
+def add(a, b):
+    return a + b
+
+print("Addition:", add(10, 20))
+
+# Factorial using recursion
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print("Factorial:", factorial(5))
+
+# Lambda function
+square = lambda x: x * x
+print("Square:", square(5))
+
+# Lambda with two arguments
+maximum = lambda a, b: a if a > b else b
+print("Maximum:", maximum(10, 20))
+
+# Lambda with map()
+numbers = [1, 2, 3, 4, 5]
+squares = list(map(lambda x: x * x, numbers))
+
+print("Squares:", squares)
