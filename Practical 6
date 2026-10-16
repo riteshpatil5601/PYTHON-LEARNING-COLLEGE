@@ -1,0 +1,29 @@
+import os
+
+# Create and write to a file
+f = open("demo.txt", "w")
+f.write("Welcome to Python Programming")
+f.close()
+
+# Read the file
+f = open("demo.txt", "r")
+print("File Content:", f.read())
+f.close()
+
+# Append content
+f = open("demo.txt", "a")
+f.write("\nFile handling experiment")
+f.close()
+
+# Display current directory
+print("Current Directory:", os.getcwd())
+
+# Display files and folders
+print("Directory Contents:", os.listdir())
+
+# Create a directory
+if not os.path.exists("MyFolder"):
+    os.mkdir("MyFolder")
+    print("Directory created")
+else:
+    print("Directory already exists")
