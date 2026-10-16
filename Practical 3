@@ -1,6 +1,26 @@
-n = int(input("Enter a number: "))
+# List operations
+numbers = [10, 20, 30, 40, 50]
 
-if n % 2 == 0:
-    print("Even number")
-else:
-    print("Odd number")
+print("List:", numbers)
+numbers.append(60)
+print("After adding:", numbers)
+numbers.remove(20)
+print("After removing:", numbers)
+print("First element:", numbers[0])
+
+# Tuple operations
+t = (10, 20, 30, 40)
+
+print("Tuple:", t)
+print("First element:", t[0])
+print("Length:", len(t))
+
+# Array operations
+from array import array
+
+arr = array('i', [1, 2, 3, 4, 5])
+
+print("Array:", arr)
+arr.append(6)
+print("After adding:", arr)
+print("Array sum:", sum(arr))
