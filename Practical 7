@@ -1,0 +1,18 @@
+class Student:
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+        print("Constructor called")
+
+    def display(self):
+        print("Name:", self.name)
+        print("Roll Number:", self.roll)
+
+    def __del__(self):
+        print("Destructor called")
+
+
+s1 = Student("Ritesh", 101)
+s1.display()
+
+del s1
