@@ -1,10 +1,33 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
+# String operations
+s = "Python Programming"
 
-if a >= b and a >= c:
-    print("Largest number:", a)
-elif b >= a and b >= c:
-    print("Largest number:", b)
-else:
-    print("Largest number:", c)
+print("String:", s)
+print("Uppercase:", s.upper())
+print("Lowercase:", s.lower())
+print("Length:", len(s))
+print("Replace:", s.replace("Python", "Java"))
+
+# Set operations
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+
+print("Set A:", a)
+print("Set B:", b)
+print("Union:", a | b)
+print("Intersection:", a & b)
+print("Difference:", a - b)
+
+# Dictionary operations
+student = {
+    "name": "Ritesh",
+    "roll": 101,
+    "marks": 85
+}
+
+print("Dictionary:", student)
+print("Student Name:", student["name"])
+
+student["marks"] = 90
+student["city"] = "Kolhapur"
+
+print("Updated Dictionary:", student)
