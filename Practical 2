@@ -1,8 +1,7 @@
-a = 10
-b = 5
+# Experiment 2: Hello World
 
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
-print("Modulus:", a % b)
+import sys
+
+print("Hello, World!")
+print("Python Version:", sys.version)
+print("Python Installation Path:", sys.executable)
