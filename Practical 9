@@ -1,0 +1,30 @@
+import numpy as np
+import pandas as pd
+
+# NumPy array
+arr = np.array([10, 20, 30, 40, 50])
+
+print("Array:", arr)
+print("Sum:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Maximum:", np.max(arr))
+print("Minimum:", np.min(arr))
+
+print("Array + 5:", arr + 5)
+print("Array * 2:", arr * 2)
+
+# Pandas DataFrame
+data = {
+    "Name": ["Amit", "Ritesh", "Rahul"],
+    "Marks": [80, 90, 75]
+}
+
+df = pd.DataFrame(data)
+
+print("\nStudent Data:")
+print(df)
+
+print("\nNames:")
+print(df["Name"])
+
+print("\nAverage Marks:", df["Marks"].mean())
